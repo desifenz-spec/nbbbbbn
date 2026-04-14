@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northbest International | Premium Apparel Manufacturing</title>
+  <meta name="description" content="Premium apparel manufacturing in Guwahati. Low MOQ from 50 pieces. T-shirts, hoodies, sweatshirts, jerseys & more. 8+ years experience." />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- PAGE MANAGER: controls which page is visible -->
+  <div id="app" data-page="home">
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" onclick="showPage('home')">
+        <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/NORTHBEST_mqvmdu.png" alt="Northbest International" class="logo-img" />
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" onclick="showPage('home')">About</a>
+        <a href="#services" onclick="showPage('home')">Services</a>
+        <a href="#products" onclick="showPage('home')">Products</a>
+        <a href="#clients" onclick="showPage('home')">Clients</a>
+        <a href="#" onclick="showPage('calculator'); return false;" class="nav-active-calc">Price Calculator</a>
+        <a href="#contact" onclick="showPage('home')" class="nav-cta">Get a Quote</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HOME PAGE ========== -->
+  <div id="page-home" class="page active">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_9998_lhwlyy.jpg" alt="Northbest product display" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Guwahati, India · Est. 2017</p>
+        <h1 class="hero-title">Premium Apparel<br>Manufacturing</h1>
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Low MOQ from 50 pieces
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            8+ Years of Experience
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            One-Stop Manufacturing
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Founder-Driven Quality
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Get a Quote</a>
+          <a href="#" onclick="showPage('calculator'); return false;" class="btn-outline">Price Calculator</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid animate-on-scroll">
+          <div class="about-images">
+            <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_4721_sfwggq.jpg" alt="Northbest factory" class="about-img" />
+            <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_4722_fjqzp8.jpg" alt="Northbest production line" class="about-img offset" />
+          </div>
+          <div class="about-text">
+            <p class="section-label">Our Story</p>
+            <h2 class="section-title">Who We Are</h2>
+            <p class="text-muted"><strong>Northbest International</strong> is a premium apparel manufacturing company based in Guwahati, offering end-to-end production for streetwear and custom clothing. We specialize in low-MOQ, high-quality garments for brands, businesses, and creators across India.</p>
+            <p class="text-muted">We started in 2017 with a challenge — finding a manufacturer who could deliver premium streetwear without demanding high MOQ. Instead of waiting for the right manufacturer, we became one.</p>
+            <blockquote class="about-quote">
+              <p>"We became one of the first streetwear-focused manufacturers from the region."</p>
+            </blockquote>
+            <div class="founder-info">
+              <p class="founder-name">Jubair Hasan</p>
+              <p class="text-muted-sm">Managing Director, Northbest International</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div>
+            <p class="section-label">What We Do</p>
+            <h2 class="section-title">Our Services</h2>
+          </div>
+          <div class="slider-controls" id="servicesControls">
+            <button class="slider-btn" onclick="scrollSlider('services-slider', -380)" aria-label="Scroll left">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="slider-btn" onclick="scrollSlider('services-slider', 380)" aria-label="Scroll right">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-slider" id="services-slider">
+        <div class="service-card">
+          <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_4721_sfwggq.jpg" alt="Cut & Sew Manufacturing" loading="lazy" />
+          <div class="service-overlay">
+            <h3>Cut &amp; Sew Manufacturing</h3>
+            <p>End-to-end garment production from pattern making to finishing with precision cutting and stitching.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_4722_fjqzp8.jpg" alt="Screen & DTG Printing" loading="lazy" />
+          <div class="service-overlay">
+            <h3>Screen &amp; DTG Printing</h3>
+            <p>Premium print techniques including screen printing, DTG, DTF, and sublimation for every style.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_4788_lpobst.jpg" alt="Quality Control" loading="lazy" />
+          <div class="service-overlay">
+            <h3>Quality Control</h3>
+            <p>Rigorous multi-stage quality checks to ensure every garment meets premium standards.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_4793_jhxdyv.jpg" alt="Branding & Packaging" loading="lazy" />
+          <div class="service-overlay">
+            <h3>Branding &amp; Packaging</h3>
+            <p>Complete brand identity with custom neck labels, hangtags, and premium packaging solutions.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_0531_vwq7ow.png" alt="Embroidery & Detailing" loading="lazy" />
+          <div class="service-overlay">
+            <h3>Embroidery &amp; Detailing</h3>
+            <p>High-precision embroidery and custom detailing for a refined, premium finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section">
+      <div class="container">
+        <div class="whyus-grid animate-on-scroll">
+          <div class="whyus-text">
+            <p class="section-label">Why Choose Us</p>
+            <h2 class="section-title">Built Different</h2>
+            <div class="features-list">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                </div>
+                <div>
+                  <h3>Low MOQ</h3>
+                  <p>Orders starting from just 50 pieces — perfect for new brands, limited drops, and trial collections.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h3>8 Years Experience</h3>
+                  <p>Since 2017, we've manufactured for brands, corporates, and creators. Deep expertise in quality control and production management.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h3>End-to-End Production</h3>
+                  <p>From fabric sourcing to branding to delivery — one partner, zero handoffs, complete accountability.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <div>
+                  <h3>Founder-Direct Access</h3>
+                  <p>You deal directly with the founder — no middlemen, no project managers. Real conversations, real accountability.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="whyus-image">
+            <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_4793_jhxdyv.jpg" alt="Why Northbest" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="text-center animate-on-scroll">
+          <p class="section-label light">How It Works</p>
+          <h2 class="section-title light">From Idea to Delivery</h2>
+        </div>
+        <div class="workflow-grid animate-on-scroll">
+          <div class="workflow-step">
+            <div class="step-number">01</div>
+            <h3>Consultation</h3>
+            <p>Share your vision — fabric, fit, print technique, and branding. We advise on what works best for your budget and quantity.</p>
+          </div>
+          <div class="workflow-step">
+            <div class="step-number">02</div>
+            <h3>Sampling</h3>
+            <p>We produce a physical sample for your approval. Every detail — stitching, print placement, sizing — is confirmed before bulk production.</p>
+          </div>
+          <div class="workflow-step">
+            <div class="step-number">03</div>
+            <h3>Production</h3>
+            <p>Bulk manufacturing begins with full quality oversight. Regular updates keep you informed at every stage of the production process.</p>
+          </div>
+          <div class="workflow-step">
+            <div class="step-number">04</div>
+            <h3>Delivery</h3>
+            <p>Finished garments are packed with your custom branding and delivered right to your doorstep, ready to sell.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section section-alt">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div>
+            <p class="section-label">Products Moodboard</p>
+            <h2 class="section-title">Our Products</h2>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn" onclick="scrollSlider('products-slider', -320)" aria-label="Scroll left">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="slider-btn" onclick="scrollSlider('products-slider', 320)" aria-label="Scroll right">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-slider" id="products-slider">
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5405_hzmfa5.jpg" alt="Product 1" loading="lazy" /></div>
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5406_onu37b.jpg" alt="Product 2" loading="lazy" /></div>
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5408_pmrnqb.jpg" alt="Product 3" loading="lazy" /></div>
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5410_rha6t7.jpg" alt="Product 4" loading="lazy" /></div>
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5411_slhxh6.jpg" alt="Product 5" loading="lazy" /></div>
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5413_celbbi.jpg" alt="Product 6" loading="lazy" /></div>
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5415_l9qfsv.jpg" alt="Product 7" loading="lazy" /></div>
+        <div class="product-card"><img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/IMG_5421_oolueb.jpg" alt="Product 8" loading="lazy" /></div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section id="clients" class="section">
+      <div class="container">
+        <div class="text-center animate-on-scroll">
+          <p class="section-label">Trusted By</p>
+          <h2 class="section-title">Our Clients</h2>
+        </div>
+      </div>
+      <div class="marquee-wrapper">
+        <div class="marquee-track" id="marqueeTrack">
+          <span class="client-name">Dankies</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Drip Garden</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Origii</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">ACR Audacity Roar</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Bair</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Merchery</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">UE</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Rarebreed</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Rapido</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Dalmia Bharat Cement</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Royal Global University</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Bharat Petroleum</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Assam Down Town University</span>
+          <span class="client-sep">·</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="client-name">Dankies</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Drip Garden</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Origii</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">ACR Audacity Roar</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Bair</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Merchery</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">UE</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Rarebreed</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Rapido</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Dalmia Bharat Cement</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Royal Global University</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Bharat Petroleum</span>
+          <span class="client-sep">·</span>
+          <span class="client-name">Assam Down Town University</span>
+          <span class="client-sep">·</span>
+        </div>
+      </div>
+      <p class="text-center text-muted-sm" style="margin-top:3rem;">&amp; many more brands, corporates &amp; creators across India</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <div class="contact-grid animate-on-scroll">
+          <div class="contact-info">
+            <p class="section-label light">Get In Touch</p>
+            <h2 class="section-title light">Request a Quote</h2>
+            <p class="text-muted light">Tell us about your project and we'll provide a detailed quote within 24 hours. Low MOQ starting from just 50 pieces.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="font-medium light">Office</p>
+                  <p class="text-muted-sm light">302 H-46, Jayanagar, Sixmile, Guwahati 781022</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3-8.61A2 2 0 012.08 2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.29 6.29l1.42-1.42a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2.02z"/></svg>
+                </div>
+                <div>
+                  <p class="font-medium light">Phone</p>
+                  <p class="text-muted-sm light">+91 60001 75576</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="font-medium light">Email</p>
+                  <p class="text-muted-sm light"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb838e878784ab8584999f83898e989f82859f87c5888486">[email&#160;protected]</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="calc-cta-block">
+              <p class="calc-cta-text">Not sure about pricing?</p>
+              <a href="#" onclick="showPage('calculator'); return false;" class="btn-calc-link">
+                Try our Price Calculator
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-field">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Your Name" required maxlength="100" />
+              </div>
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email" required maxlength="255" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label>Phone</label>
+                <input type="tel" name="phone" placeholder="+91 00000 00000" maxlength="20" />
+              </div>
+              <div class="form-field">
+                <label>Brand Name</label>
+                <input type="text" name="brand" placeholder="Your Brand" maxlength="100" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label>Product Type</label>
+                <select name="product_type">
+                  <option value="" disabled selected>Select Type</option>
+                  <option value="tshirts">T-Shirts</option>
+                  <option value="hoodies">Hoodies</option>
+                  <option value="sweatshirts">Sweatshirts</option>
+                  <option value="jerseys">Jerseys</option>
+                  <option value="uniforms">Uniforms</option>
+                  <option value="caps">Caps</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label>Quantity</label>
+                <input type="number" name="quantity" placeholder="Min. 50 pcs" min="50" />
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Project Details</label>
+              <textarea name="message" placeholder="Tell us about your project — fabric preference, print type, colors, deadline..." rows="4" maxlength="1000"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              Send Request
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <img src="https://res.cloudinary.com/dbwtl1lrw/image/upload/q_auto,f_auto/v1776102384/NORTHBEST_mqvmdu.png" alt="Northbest International" class="footer-logo" />
+            <p class="footer-desc">Premium apparel manufacturing for streetwear brands, businesses, and creators across India.</p>
+          </div>
+          <div>
+            <h4 class="footer-heading">Quick Links</h4>
+            <nav class="footer-links">
+              <a href="#about" onclick="showPage('home')">About</a>
+              <a href="#services" onclick="showPage('home')">Services</a>
+              <a href="#products" onclick="showPage('home')">Products</a>
+              <a href="#clients" onclick="showPage('home')">Clients</a>
+              <a href="#" onclick="showPage('calculator'); return false;">Price Calculator</a>
+              <a href="#contact" onclick="showPage('home')">Contact</a>
+            </nav>
+          </div>
+          <div>
+            <h4 class="footer-heading">Contact</h4>
+            <p class="footer-contact">302 H-46, Jayanagar, Sixmile<br>Guwahati 781022, Assam</p>
+            <p class="footer-contact">+91 60001 75576</p>
+            <p class="footer-contact"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b030e0707042b0504191f03090e181f02051f0745080406">[email&#160;protected]</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 Northbest International. All rights reserved. Guwahati, Assam, India.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- end #page-home -->
+
+  <!-- ========== PRICE CALCULATOR PAGE ========== -->
+  <div id="page-calculator" class="page">
+
+    <!-- Calc Hero -->
+    <div class="calc-hero">
+      <div class="container">
+        <a href="#" onclick="showPage('home'); return false;" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          Back to Home
+        </a>
+        <p class="section-label" style="margin-top:2rem;">Pricing Tool</p>
+        <h1 class="calc-title">Price Calculator</h1>
+        <p class="calc-subtitle">Get an instant estimate for your order. All prices are indicative and in Indian Rupees (INR). Final quote confirmed after consultation.</p>
+      </div>
+    </div>
+
+    <!-- Calculator Body -->
+    <div class="calc-body">
+      <div class="container">
+        <div class="calc-layout">
+
+          <!-- LEFT: Options -->
+          <div class="calc-options">
+
+            <!-- Step 1: Product -->
+            <div class="calc-step" id="step-product">
+              <div class="calc-step-header">
+                <span class="step-num">01</span>
+                <h3>Select Product Type</h3>
+              </div>
+              <div class="calc-grid-options" id="product-options">
+                <button class="option-btn" data-step="product" data-value="tshirt" data-price="280" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+                  </span>
+                  <span class="opt-label">T-Shirt</span>
+                  <span class="opt-price">from ₹280</span>
+                </button>
+                <button class="option-btn" data-step="product" data-value="oversized" data-price="350" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+                  </span>
+                  <span class="opt-label">Oversized Tee</span>
+                  <span class="opt-price">from ₹350</span>
+                </button>
+                <button class="option-btn" data-step="product" data-value="hoodie" data-price="650" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2c0 2.21-1.79 4-4 4S8 4.21 8 2L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57A1 1 0 004 10h1v11a1 1 0 001 1h12a1 1 0 001-1V10h1a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/><path d="M8 2s-.5 4-4 6"/><path d="M16 2s.5 4 4 6"/></svg>
+                  </span>
+                  <span class="opt-label">Hoodie</span>
+                  <span class="opt-price">from ₹650</span>
+                </button>
+                <button class="option-btn" data-step="product" data-value="sweatshirt" data-price="520" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57A1 1 0 004 10h1v11a1 1 0 001 1h12a1 1 0 001-1V10h1a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+                  </span>
+                  <span class="opt-label">Sweatshirt</span>
+                  <span class="opt-price">from ₹520</span>
+                </button>
+                <button class="option-btn" data-step="product" data-value="polo" data-price="380" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57A1 1 0 004 10h1v11a1 1 0 001 1h12a1 1 0 001-1V10h1a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/><line x1="12" y1="2" x2="12" y2="8"/></svg>
+                  </span>
+                  <span class="opt-label">Polo Shirt</span>
+                  <span class="opt-price">from ₹380</span>
+                </button>
+                <button class="option-btn" data-step="product" data-value="jersey" data-price="420" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.57A1 1 0 004 10h1v11a1 1 0 001 1h12a1 1 0 001-1V10h1a1 1 0 00.99-.84l.58-3.57a2 2 0 00-1.34-2.23z"/></svg>
+                  </span>
+                  <span class="opt-label">Jersey</span>
+                  <span class="opt-price">from ₹420</span>
+                </button>
+                <button class="option-btn" data-step="product" data-value="coords" data-price="900" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+                  </span>
+                  <span class="opt-label">Co-ord Set</span>
+                  <span class="opt-price">from ₹900</span>
+                </button>
+                <button class="option-btn" data-step="product" data-value="cap" data-price="220" onclick="selectOption(this)">
+                  <span class="opt-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12h20C22 6.48 17.52 2 12 2z"/><path d="M2 12h20v4H2z"/></svg>
+                  </span>
+                  <span class="opt-label">Cap</span>
+                  <span class="opt-price">from ₹220</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Fabric -->
+            <div class="calc-step" id="step-fabric">
+              <div class="calc-step-header">
+                <span class="step-num">02</span>
+                <h3>Fabric Weight</h3>
+              </div>
+              <div class="calc-list-options" id="fabric-options">
+                <button class="option-row" data-step="fabric" data-value="180gsm" data-price="0" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">180 GSM</span>
+                    <span class="opt-row-desc">Standard weight — everyday basics, summer drops</span>
+                  </span>
+                  <span class="opt-row-add">Included</span>
+                </button>
+                <button class="option-row" data-step="fabric" data-value="220gsm" data-price="40" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">220 GSM</span>
+                    <span class="opt-row-desc">Premium weight — structured, retail-grade quality</span>
+                  </span>
+                  <span class="opt-row-add">+₹40/pc</span>
+                </button>
+                <button class="option-row" data-step="fabric" data-value="240gsm" data-price="70" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">240 GSM</span>
+                    <span class="opt-row-desc">Heavy premium — luxury feel, our recommended grade</span>
+                  </span>
+                  <span class="opt-row-add">+₹70/pc</span>
+                </button>
+                <button class="option-row" data-step="fabric" data-value="280gsm" data-price="110" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">280 GSM</span>
+                    <span class="opt-row-desc">Ultra-heavy — for premium hoodies &amp; sweatshirts</span>
+                  </span>
+                  <span class="opt-row-add">+₹110/pc</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Print Technique -->
+            <div class="calc-step" id="step-print">
+              <div class="calc-step-header">
+                <span class="step-num">03</span>
+                <h3>Print Technique</h3>
+              </div>
+              <div class="calc-list-options" id="print-options">
+                <button class="option-row" data-step="print" data-value="none" data-price="0" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">No Print</span>
+                    <span class="opt-row-desc">Blank garment / embossing only</span>
+                  </span>
+                  <span class="opt-row-add">Included</span>
+                </button>
+                <button class="option-row" data-step="print" data-value="screen" data-price="35" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">Screen Print</span>
+                    <span class="opt-row-desc">Best for bold graphics, single/multi-colour runs</span>
+                  </span>
+                  <span class="opt-row-add">+₹35/pc</span>
+                </button>
+                <button class="option-row" data-step="print" data-value="dtf" data-price="55" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">DTF (Direct-to-Film)</span>
+                    <span class="opt-row-desc">Full-colour, photographic quality, no colour limit</span>
+                  </span>
+                  <span class="opt-row-add">+₹55/pc</span>
+                </button>
+                <button class="option-row" data-step="print" data-value="dtg" data-price="80" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">DTG (Direct-to-Garment)</span>
+                    <span class="opt-row-desc">Soft hand-feel, great for small batches and gradients</span>
+                  </span>
+                  <span class="opt-row-add">+₹80/pc</span>
+                </button>
+                <button class="option-row" data-step="print" data-value="sublimation" data-price="65" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">Sublimation</span>
+                    <span class="opt-row-desc">All-over prints on polyester — sportswear &amp; jerseys</span>
+                  </span>
+                  <span class="opt-row-add">+₹65/pc</span>
+                </button>
+                <button class="option-row" data-step="print" data-value="embroidery" data-price="90" onclick="selectOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">Embroidery</span>
+                    <span class="opt-row-desc">Premium stitched logo — chest, sleeve, or back placement</span>
+                  </span>
+                  <span class="opt-row-add">+₹90/pc</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Branding -->
+            <div class="calc-step" id="step-branding">
+              <div class="calc-step-header">
+                <span class="step-num">04</span>
+                <h3>Branding Add-ons</h3>
+                <span class="step-multi-note">Select all that apply</span>
+              </div>
+              <div class="calc-list-options" id="branding-options">
+                <button class="option-row toggle-btn" data-step="branding" data-value="neck_label" data-price="18" onclick="toggleOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">Custom Neck Label</span>
+                    <span class="opt-row-desc">Woven or printed label inside the neckline</span>
+                  </span>
+                  <span class="opt-row-toggle">
+                    <span class="toggle-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    +₹18/pc
+                  </span>
+                </button>
+                <button class="option-row toggle-btn" data-step="branding" data-value="hangtag" data-price="12" onclick="toggleOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">Hangtag</span>
+                    <span class="opt-row-desc">Printed cardboard hangtag with brand identity</span>
+                  </span>
+                  <span class="opt-row-toggle">
+                    <span class="toggle-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    +₹12/pc
+                  </span>
+                </button>
+                <button class="option-row toggle-btn" data-step="branding" data-value="polybag" data-price="15" onclick="toggleOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">Branded Poly Bag</span>
+                    <span class="opt-row-desc">Printed packaging poly bag with your logo</span>
+                  </span>
+                  <span class="opt-row-toggle">
+                    <span class="toggle-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    +₹15/pc
+                  </span>
+                </button>
+                <button class="option-row toggle-btn" data-step="branding" data-value="box" data-price="45" onclick="toggleOption(this)">
+                  <span class="opt-row-label">
+                    <span class="opt-row-name">Premium Box Packaging</span>
+                    <span class="opt-row-desc">Rigid box with brand print — premium unboxing experience</span>
+                  </span>
+                  <span class="opt-row-toggle">
+                    <span class="toggle-check">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </span>
+                    +₹45/pc
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 5: Quantity -->
+            <div class="calc-step" id="step-quantity">
+              <div class="calc-step-header">
+                <span class="step-num">05</span>
+                <h3>Order Quantity</h3>
+              </div>
+              <div class="qty-selector">
+                <div class="qty-presets">
+                  <button class="qty-btn" onclick="setQuantity(50)">50 pcs</button>
+                  <button class="qty-btn" onclick="setQuantity(100)">100 pcs</button>
+                  <button class="qty-btn" onclick="setQuantity(250)">250 pcs</button>
+                  <button class="qty-btn" onclick="setQuantity(500)">500 pcs</button>
+                  <button class="qty-btn" onclick="setQuantity(1000)">1000 pcs</button>
+                </div>
+                <div class="qty-input-row">
+                  <label>Custom quantity</label>
+                  <input type="number" id="qty-input" min="50" value="100" placeholder="Min 50" oninput="updateQuantity(this.value)" />
+                </div>
+                <p class="qty-note">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  Pricing reduces at higher quantities. Bulk discounts applied automatically.
+                </p>
+              </div>
+            </div>
+
+          </div><!-- end calc-options -->
+
+          <!-- RIGHT: Summary -->
+          <div class="calc-summary" id="calc-summary">
+            <div class="summary-card">
+              <div class="summary-header">
+                <h3>Your Estimate</h3>
+                <span class="summary-badge">Live Preview</span>
+              </div>
+
+              <div class="summary-product-block" id="summary-product-block">
+                <p class="summary-empty-hint">Select a product type to begin →</p>
+              </div>
+
+              <div class="summary-breakdown" id="summary-breakdown">
+                <!-- populated by JS -->
+              </div>
+
+              <div class="summary-total-block" id="summary-total-block">
+                <div class="summary-row total-row">
+                  <span>Per Piece</span>
+                  <span id="per-piece-price">₹—</span>
+                </div>
+                <div class="summary-row">
+                  <span>Quantity</span>
+                  <span id="summary-qty">— pcs</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-row grand-total">
+                  <span>Total Estimate</span>
+                  <span id="grand-total-price">₹—</span>
+                </div>
+                <p class="summary-disclaimer">* Indicative estimate only. Actual pricing confirmed after consultation. GST &amp; shipping extra.</p>
+              </div>
+
+              <div class="summary-actions">
+                <a href="#contact" onclick="showPage('home')" class="btn-get-quote">
+                  Get Exact Quote
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </a>
+                <a href="https://wa.me/916000175576?text=Hi%2C%20I%20used%20the%20price%20calculator%20on%20your%20website." target="_blank" class="btn-whatsapp">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  WhatsApp Us
+                </a>
+              </div>
+
+              <div class="summary-note-block">
+                <p>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  Turnaround: 10–18 working days after sample approval
+                </p>
+                <p>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Minimum order: 50 pieces per design
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end calc-layout -->
+      </div>
+    </div><!-- end calc-body -->
+
+    <!-- Calc Footer note -->
+    <div class="calc-footer-note">
+      <div class="container">
+        <p>Prices shown are approximate manufacturing costs. Final pricing includes fabric grade, color count, finishing, and logistics. All prices in INR. GST applicable as per government norms.</p>
+        <a href="#" onclick="showPage('home'); return false;" class="back-lin
